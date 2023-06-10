@@ -2,16 +2,16 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "joe+dev@onmulticloud.com"
-    AccountName               = "Trade_dev"
+    AccountEmail              = "joe+test@onmulticloud.com"
+    AccountName               = "Trade_test"
     ManagedOrganizationalUnit = "Custom"
-    SSOUserEmail              = "joe+dev@onmulticloud.com"
-    SSOUserFirstName          = "Trade_dev"
-    SSOUserLastName           = "dev"
+    SSOUserEmail              = "joe+test@onmulticloud.com"
+    SSOUserFirstName          = "Trade_test"
+    SSOUserLastName           = "test"
   }
 
   account_tags = {
-    "Learn Tutorial" = "AFT"
+    "Trade Cloud" = "test"
   }
 
   change_management_parameters = {
@@ -23,5 +23,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Trade_dev"
+  account_customizations_name = "Trade_test"
 }
