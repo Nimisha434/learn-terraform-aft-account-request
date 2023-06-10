@@ -1,17 +1,17 @@
-module "Trade_Dev" {
+module "Trade_Deve" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "joe+dev@onmulticloud.com"
-    AccountName               = "Trade_Dev"
+    AccountEmail              = "joe+deve@onmulticloud.com"
+    AccountName               = "Trade_Deve"
     ManagedOrganizationalUnit = "Custom"
-    SSOUserEmail              = "joe+dev@onmulticloud.com"
-    SSOUserFirstName          = "Trade_Dev"
-    SSOUserLastName           = "dev"
+    SSOUserEmail              = "joe+deve@onmulticloud.com"
+    SSOUserFirstName          = "Trade_Deve"
+    SSOUserLastName           = "deve"
   }
 
   account_tags = {
-    "Trade Cloud" = "dev"
+    "Trade Cloud" = "deve"
   }
 
   change_management_parameters = {
@@ -23,7 +23,7 @@ module "Trade_Dev" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Trade_Dev"
+  account_customizations_name = "Trade_Deve"
 }
 
 
